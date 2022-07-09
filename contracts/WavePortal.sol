@@ -22,6 +22,8 @@ contract WavePortal {
 
     constructor() payable {
         console.log("We have been constructed!");
+        totalWaves = 0;
+        // seed = 0;
 
         seed = (block.timestamp + block.difficulty) % 100;
     }
