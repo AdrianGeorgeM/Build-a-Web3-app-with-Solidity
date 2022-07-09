@@ -26,9 +26,7 @@ contract WavePortal {
 
     constructor() payable {
         console.log("We have been constructed!");
-        /*
-         * Set the initial seed
-         */
+
         seed = (block.timestamp + block.difficulty) % 100;
     }
 
