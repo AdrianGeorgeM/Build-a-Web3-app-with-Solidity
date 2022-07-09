@@ -18,10 +18,6 @@ contract WavePortal {
 
     Wave[] waves;
 
-    /*
-     * This is an address => uint mapping, meaning I can associate an address with a number!
-     * In this case, I'll be storing the address with the last time the user waved at us.
-     */
     mapping(address => uint256) public lastWavedAt;
 
     constructor() payable {
